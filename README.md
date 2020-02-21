@@ -20,20 +20,32 @@ https://docs.google.com/document/d/13cmLTbSPMelH3Trwn97XvbacHwunfRQp0ScHgDng_-c/
 - (Stays the same for the foreseeable future)
 
 #### ??? => Substantial Earnings
-- (Unknown prediction formula) 
+- (Unknown prediction formula)
+- May be related to "Substantial gainful activity"???
+- https://www.ssa.gov/pubs/EN-05-10045.pdf
+- "Substatial Earnings" is a yearly earnings threshhold which determines how much pension a worker will recieve based on how "substantial" their salary was across various years
 
 #### ✅ COLA
 - (Formula is publicly available, uses 3rd quarter CPI-W of current and past year)
 - https://www.ssa.gov/OACT/TR/2019/tr2019.pdf#page=112
 - https://www.ssa.gov/OACT/COLA/latestCOLA.html
 
-#### ??? => Max Wages Taxable
+#### ??? => Max Wages Taxable / Max Wages Creditable
 - (Unknown prediction formula)
+- Not necessarily correlated with Average Wages taxable
 - https://www.ssa.gov/OACT/TR/2019/tr2019.pdf#page=112
+- https://secure.ssa.gov/POMS.NSF/lnx/0301404300
+- https://www.ssa.gov/policy/docs/statcomps/supplement/2017/2a1-2a7.html#table2.a3
+- https://www.ssa.gov/policy/docs/statcomps/supplement/2017/glossary.html#maxtax
+- https://secure.ssa.gov/apps10/poms/images/poms19/19700/G-SL_70001.001.pdf
+- https://secure.ssa.gov/poms.nsf/lnx/0301401015
+- https://www.ssa.gov/OP_Home/ssact/title02/0230.htm
+- https://www.ssa.gov/regulations/
 
 #### ✅ Average Wage Index
 - (Has detailed predictions in the Trustees report)
 - https://www.ssa.gov/OACT/TR/2019/tr2019.pdf#page=123
+- https://www.ssa.gov/OACT/TR/2019/tr2019.pdf#page=224
 
 ## Tables
 - https://docs.google.com/spreadsheets/d/1EXfjoFpx6e5ypw5te45fDWkBXwFolDSbgHJv9rpdMB0/edit#gid=1069245443
