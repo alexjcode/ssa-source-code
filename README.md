@@ -2,6 +2,7 @@
 https://docs.google.com/document/d/13cmLTbSPMelH3Trwn97XvbacHwunfRQp0ScHgDng_-c/edit#
 
 ## Files that may contain portions of the SSA calculation formula / data:
+- https://github.com/alexjcode/ssa-source-code/blob/master/oactobjs32/piadata/awbidtnf.cpp (Max Earnings creditable)
 - https://github.com/alexjcode/ssa-source-code/blob/master/oactobjs32/include/SgaGeneral.h
 - https://github.com/alexjcode/ssa-source-code/blob/master/oactobjs32/piadata/SgaGeneral.cpp
 - https://github.com/alexjcode/ssa-source-code/blob/master/oactobjs32/include/avgwg.h
@@ -19,7 +20,7 @@ https://docs.google.com/document/d/13cmLTbSPMelH3Trwn97XvbacHwunfRQp0ScHgDng_-c/
 #### ✅ Benefit Reduction
 - (Stays the same for the foreseeable future)
 
-#### ??? => Substantial Earnings
+#### *️⃣ ??? => Substantial Earnings
 - (Unknown prediction formula)
 - May be related to "Substantial gainful activity"???
 - https://www.ssa.gov/pubs/EN-05-10045.pdf
@@ -30,7 +31,8 @@ https://docs.google.com/document/d/13cmLTbSPMelH3Trwn97XvbacHwunfRQp0ScHgDng_-c/
 - https://www.ssa.gov/OACT/TR/2019/tr2019.pdf#page=112
 - https://www.ssa.gov/OACT/COLA/latestCOLA.html
 
-#### ??? => Max Wages Taxable / Max Wages Creditable
+#### *️⃣ ??? => Max Wages Taxable / Max Wages Creditable
+- https://github.com/alexjcode/ssa-source-code/blob/master/oactobjs32/piadata/awbidtnf.cpp
 - (Unknown prediction formula)
 - Not necessarily correlated with Average Wages taxable
 - https://www.ssa.gov/OACT/TR/2019/tr2019.pdf#page=112
