@@ -1,6 +1,12 @@
 # AnyPIA Source Code
 https://docs.google.com/document/d/13cmLTbSPMelH3Trwn97XvbacHwunfRQp0ScHgDng_-c/edit#
 
+Screenshots from our tour of the policy code: https://drive.google.com/drive/folders/1Y-3GPoxF3Z_QLYFraHPr9wjUfo2rVczS
+
+
+### Idea: Enscripten this sourcecode to use it from JS
+- `oactobjs32/` might be enough. `Module.ccall()` as the connection btwn JS<>
+
 ## Files that may contain portions of the SSA calculation formula / data:
 - https://github.com/alexjcode/ssa-source-code/blob/master/oactobjs32/piadata/awbidtnf.cpp (Max Earnings creditable)
 - https://github.com/alexjcode/ssa-source-code/blob/master/oactobjs32/include/SgaGeneral.h
@@ -20,18 +26,23 @@ https://docs.google.com/document/d/13cmLTbSPMelH3Trwn97XvbacHwunfRQp0ScHgDng_-c/
 #### ✅ Benefit Reduction
 - (Stays the same for the foreseeable future)
 
-#### *️⃣ ??? => Substantial Earnings
-- (Unknown prediction formula)
-- May be related to "Substantial gainful activity"???
+#### *️⃣ ??? => Substantial Earnings (WEP)
+- (Unknown prediction formula) 
 - https://www.ssa.gov/pubs/EN-05-10045.pdf
-- "Substatial Earnings" is a yearly earnings threshhold which determines how much pension a worker will recieve based on how "substantial" their salary was across various years
+- "Substantial Earnings" is a yearly earnings threshold which determines how much pension a worker will receive based on how "substantial" their salary was across various years
+
+- Here is where the YOC aka Substantial Earnings table gets updated: https://github.com/alexjcode/ssa-source-code/blob/a179e28d63cb2966fae53e76e4aab73dea7a90cf/oactobjs32/piadata/piaparms.cpp#L616 Code is very complex. Also need to understand the other piaparms* files: several use Assumptions.
+- Assumptions: The Assumptions class and tab visible in AnyPIA is relevant only when the person has not yet (either: retired OR reached retirement age, not sure which??). It takes as parameters the current calendar year and the max projected year (is this 2100 or retirement age?)  We could use it to Could track average earnings, but not relevant to substantial earnings in an obvious way.
+- PiaMethod seems to implement WEP category of the person's situation here, counting years based on Substantial Earnings: https://github.com/alexjcode/ssa-source-code/blob/master/oactobjs32/piadata/PiaMethod.cpp#L91
 
 #### ✅ COLA
 - (Formula is publicly available, uses 3rd quarter CPI-W of current and past year)
 - https://www.ssa.gov/OACT/TR/2019/tr2019.pdf#page=112
 - https://www.ssa.gov/OACT/COLA/latestCOLA.html
 
-#### *️⃣ ??? => Max Wages Taxable / Max Wages Creditable
+#### ✅  Max Wages Taxable / Max Wages Creditable
+In the official calculator we can see from the "Maximum" shown in the wage entry dialog in future years that they just use the current year's maximum. Our app should do the same.
+
 - https://github.com/alexjcode/ssa-source-code/blob/master/oactobjs32/piadata/awbidtnf.cpp
 - (Unknown prediction formula)
 - Not necessarily correlated with Average Wages taxable
